@@ -1,0 +1,39 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-floating input {
+    height: 40px;
+}
+
+.icono {
+    padding-top: 10px;
+    color: rgb(233, 229, 229);
+}
+
+.enlaces a:hover{
+    color: rgb(34, 0, 187);
+}
+
+.form-control {
+    width: 85%;
+    margin: auto;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.links {
+    color: #ffd; 
+    text-decoration: none;
+}
+
+.enlaces a:hover {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.btn-sesion:hover {
+    color: #fff;
+    transform: scale(1.1);
+    transition: .5s;
+}
