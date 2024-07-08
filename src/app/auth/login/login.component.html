@@ -9,19 +9,22 @@
         </h1>
         <br />
 
-        <form  class="mt-4">
+        <form (ngSubmit)="login()" [formGroup]="formLogin" class="mt-4">
        
 
           <div  class="mb-3 d-flex">
             <i class="fas fa-user icono" style="font-size: 25px"></i>
             <input
-              type="email"
+              autocomplete="off"
+              type="user"
               class="form-control"
-              
+              formControlName="user"
               placeholder="Nombre de usuario"
             />
           </div>
-
+          <p>
+            <small *ngIf="formLogin.hasError('required')">Este campo es requerido</small>
+          </p>
           <div class="mb-3 d-flex">
             <i class="fas fa-key icono" style="font-size: 25px"></i>
             <input
@@ -29,6 +32,7 @@
               autocomplete="off"
               type="password"
               class="form-control"
+              formControlName="password"
               placeholder="Contraseña"
             />
           </div>
@@ -36,12 +40,13 @@
        
 
           <br />
-          <button (click)="login()" class="btn btn-md btn-primary" style="width: 225px; border-radius: 20px">Sign In</button>
+          <button [disabled]="formLogin.invalid" class="btn btn-md btn-primary" style="width: 225px; border-radius: 20px">Sign In</button>
 
           <div class="text-center text-white enlaces">
             <br/>
-            <a mat-button style="font-size: 22px"></a>
-            <a mat-button style="font-size: 22px" routerLink="">¿Olvidaste tu contraseña?</a>
+            <a mat-button style="font-size: 20px" (click)="goRegister()">¿No estás registrado?</a>
+            <a mat-button style="font-size: 20px" (click)="goForgot()">¿Olvidaste tu contraseña?</a>
+          
           </div>
           <br/>
           <div class="text-center mat-typography">

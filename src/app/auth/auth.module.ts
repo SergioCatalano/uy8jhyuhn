@@ -7,6 +7,7 @@ import { SharedModule } from '../shared/shared.module';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { PruebasformComponent } from './pruebasform/pruebasform.component';
 
 
 
@@ -15,6 +16,7 @@ import { ForgotComponent } from './forgot/forgot.component';
     LoginComponent,
     RegistroComponent,
     ForgotComponent,
+    PruebasformComponent,
   ],
   imports: [
     CommonModule,

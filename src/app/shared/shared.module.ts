@@ -9,20 +9,27 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 
 
 
 @NgModule({
   declarations: [],
-  imports: [MatSidenavModule],
+  imports: [],
   exports:[
     MatInputModule,
     MatFormFieldModule,
     ReactiveFormsModule,
     MatIconModule,
     MatButtonModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSnackBarModule,
+    MatToolbarModule,
+    MatDividerModule,
+    MatCardModule,
   ]
 })
 export class SharedModule { }

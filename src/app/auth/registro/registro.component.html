@@ -1,4 +1,4 @@
-<div class="p-2" style="background-color: rgb(61, 61, 61);">
+<div style="background-color: rgb(61, 61, 61);">
     <div class="container d-flex justify-content-center align-content-center" style="min-height: 100vh">
       <div class="row d-flex justify-content-center align-content-center w-100">
         <!-- div class="col-sm-12 col-md-6 p-5 border text-center -->
@@ -36,8 +36,8 @@
             <button class="btn btn-md btn-primary" style="width: 225px; border-radius: 20px">Registro</button>
             <div class="text-center text-white enlaces">
               <br />
-              <a mat-button style="font-size: 22px"></a>
-              <a mat-button style="font-size: 22px" routerLink="">¿Olvidaste tu contraseña?</a>
+              <a mat-button style="font-size: 20px" (click)="goLogin()">¿Ya tenés cuenta?</a>
+              <a mat-button style="font-size: 20px" (click)="goForgot()">¿Olvidaste tu contraseña?</a>
             </div>
             <br />
             <div class="text-center mat-typography">

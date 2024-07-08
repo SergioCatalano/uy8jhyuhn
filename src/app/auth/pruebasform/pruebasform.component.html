@@ -1,0 +1,8 @@
+<p>
+    Email :
+    <input type="email" [formControl]="emailCtrl">
+</p> 
+<p>
+    <small *ngIf="emailCtrl.hasError('required')">Este campo es requerido</small>
+</p>
+<button type="button" (click)="getEmail($event)">save</button>
